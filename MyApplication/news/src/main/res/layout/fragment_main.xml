@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--app:tabMode - fixed: 固定tab的位置，当tab数量过多时，超出屏幕范围后。无法显示更多。
+               scrollable: tab数量超出屏幕范围，可以滚动tab，显示更多的tab-->
+    <!-- app:tabTextAppearance="@style/design_widget_TabLayout_TextStyle"-->
+    <!-- app:tabIndicatorColor="@color/white"                 // 下方滚动的下划线颜色-->
+    <!--app:tabSelectedTextColor="@color/gray"               // tab被选中后，文字的颜色-->
+    <!--app:tabTextColor="@color/white"                      // tab默认的文字颜色-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent" android:layout_height="35dp"
+        android:background="#e4e4e4"
+        app:tabIndicatorColor="?attr/colorPrimary"
+        app:tabSelectedTextColor="?attr/colorPrimary"
+        app:tabTextColor="@android:color/black"
+        app:tabMode="scrollable"/>
+    <!--app:tabMode="scrollable" app:tabGravity="fill"  android:fillViewport="false"-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
