@@ -37,6 +37,8 @@ public class NewsFragment extends BaseFragment implements SwipeRefreshLayout.OnR
 
     private List<NewsBean.ResultBean.DataBean> dataBeanList;
 
+    //google 推荐的传参方式，不推荐构造器直接new
+
     public static NewsFragment getInstance(String loadPage){
         instance = new NewsFragment();
         Bundle bundle = new Bundle();
